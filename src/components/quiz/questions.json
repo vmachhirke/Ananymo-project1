@@ -1,0 +1,884 @@
+[
+    {
+        "text": "What is a loop in programming?",
+        "options": [
+            "A type of variable",
+            "A way to repeat a block of code",
+            "A data structure",
+            "A type of function"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "What is the file extension for a Python source file?",
+        "options": [
+            ".py",
+            ".ps",
+            ".pyt",
+            ".pt"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "Which of the following is a primitive data type in Java?",
+        "options": [
+            "String",
+            "Array",
+            "Object",
+            "int"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "text": "What is the output of the following code snippet?\n\n```\nint x = 10;\nSystem.out.println(x == 10 ? \"Yes\" : \"No\");\n```",
+        "options": [
+            "Yes",
+            "No",
+            "10",
+            "Error"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "Which of the following is not a programming paradigm?",
+        "options": [
+            "Object-Oriented Programming",
+            "Functional Programming",
+            "Imperative Programming",
+            "Instructional Programming"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "text": "What is the purpose of the 'break' statement in a loop?",
+        "options": [
+            "To skip the rest of the code block and continue with the next iteration",
+            "To exit the loop",
+            "To go back to the beginning of the loop",
+            "To end the program"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "What does API stand for?",
+        "options": [
+            "Application Programming Interface",
+            "Application Program Interface",
+            "Application Protocol Interface",
+            "Application Processor Interface"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "Which of the following is not a valid variable name in Python?",
+        "options": [
+            "my_variable",
+            "_my_variable",
+            "2myvariable",
+            "myVariable"
+        ],
+        "correctOptionIndex": 2
+    },
+    {
+        "text": "What is the result of the following expression in JavaScript?\n\n```\n5 + \"5\"\n```",
+        "options": [
+            "10",
+            "\"55\"",
+            "\"5\" + 5",
+            "Error"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "What is the purpose of the 'this' keyword in JavaScript?",
+        "options": [
+            "To refer to the current object",
+            "To refer to the parent object",
+            "To refer to the global object",
+            "To refer to a specific element"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the output of the following code snippet?\n\n```\nlet x = 0;\nconsole.log(x++);\n```",
+        "options": [
+            "0",
+            "1",
+            "Error",
+            "Undefined"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "Which of the following is not a valid type of loop in programming?",
+        "options": [
+            "For loop",
+            "While loop",
+            "Do-while loop",
+            "If-else loop"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "text": "What is the result of the following expression in Python?\n\n```\n8 / 2 * (2 + 2)\n```",
+        "options": [
+            "8",
+            "16",
+            "12",
+            "4"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "What is the purpose of the 'continue' statement in a loop?",
+        "options": [
+            "To skip the rest of the code block and continue with the next iteration",
+            "To exit the loop",
+            "To go back to the beginning of the loop",
+            "To end the program"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What does CSS stand for?",
+        "options": [
+            "Computer Style Sheets",
+            "Creative Style Sheets",
+            "Colorful Style Sheets",
+            "Cascading Style Sheets"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "text": "What is the purpose of the 'finally' block in a try-catch-finally statement?",
+        "options": [
+            "To define code that should be executed if an exception is thrown",
+            "To define code that should be executed regardless of whether an exception is thrown",
+            "To define code that should be executed before the try block",
+            "To define code that should be executed after the catch block"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "Which of the following is not a valid type of data structure?",
+        "options": [
+            "Queue",
+            "Stack",
+            "Tree",
+            "List"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "text": "What is the purpose of the 'var' keyword in JavaScript?",
+        "options": [
+            "To declare a variable",
+            "To define a function",
+            "To import a module",
+            "To create a class"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the result of the following expression in Java?\n\n```\n5 / 2\n```",
+        "options": [
+            "2.5",
+            "2",
+            "3",
+            "2.0"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "Which of the following is not a valid type of comment in Python?",
+        "options": [
+            "// This is a comment",
+            "# This is a comment",
+            "\"\"\" This is a comment \"\"\"",
+            "# This is also a comment"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the purpose of the 'public' keyword in Java?",
+        "options": [
+            "To define a private method",
+            "To define a public method",
+            "To define a protected method",
+            "To define a static method"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "What does HTML stand for?",
+        "options": [
+            "Hyper Text Markup Language",
+            "Home Tool Markup Language",
+            "Hyperlinks and Text Markup Language",
+            "Hyperlinking Text Model Language"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "Which of the following is not a valid type of variable in Java?",
+        "options": [
+            "int",
+            "float",
+            "string",
+            "boolean"
+        ],
+        "correctOptionIndex": 2
+    },
+    {
+        "text": "What is the purpose of the 'extends' keyword in Java?",
+        "options": [
+            "To implement an interface",
+            "To extend a class",
+            "To override a method",
+            "To define a constructor"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "What is the output of the following code snippet?\n\n```\nint x = 5;\nSystem.out.println(x++);\n```",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "4"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the purpose of the 'else if' statement in an if-else-if ladder?",
+        "options": [
+            "To execute the if block",
+            "To execute the else block",
+            "To check another condition",
+            "To end the if-else-if ladder"
+        ],
+        "correctOptionIndex": 2
+    },
+    {
+        "text": "What does API stand for?",
+        "options": [
+            "Application Programming Interface",
+            "Application Program Interface",
+            "Application Protocol Interface",
+            "Application Processor Interface"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "Which of the following is not a valid type of loop in programming?",
+        "options": [
+            "For loop",
+            "While loop",
+            "Do-while loop",
+            "If-else loop"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "text": "What is the result of the following expression in JavaScript?\n\n```\ntrue + true\n```",
+        "options": [
+            "2",
+            "true",
+            "false",
+            "Error"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the purpose of the 'typeof' operator in JavaScript?",
+        "options": [
+            "To check the type of a variable",
+            "To define a new variable",
+            "To convert a variable to a different type",
+            "To compare two variables"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the result of the following expression in Python?\n\n```\n3 ** 2\n```",
+        "options": [
+            "9",
+            "6",
+            "27",
+            "12"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the purpose of the 'static' keyword in Java?",
+        "options": [
+            "To define a static method",
+            "To define a non-static method",
+            "To define a class variable",
+            "To define an instance variable"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the output of the following code snippet?\n\n```\nint x = 5;\nSystem.out.println(++x);\n```",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "4"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "What is the purpose of the 'catch' block in a try-catch-finally statement?",
+        "options": [
+            "To define code that should be executed if an exception is thrown",
+            "To define code that should be executed regardless of whether an exception is thrown",
+            "To define code that should be executed before the try block",
+            "To define code that should be executed after the finally block"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "Which of the following is not a valid type of comment in JavaScript?",
+        "options": [
+            "// This is a comment",
+            "# This is a comment",
+            "/* This is a comment */",
+            "// This is also a comment"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "What is the purpose of the 'for' loop in programming?",
+        "options": [
+            "To repeat a block of code a specified number of times",
+            "To check a condition before executing a block of code",
+            "To execute a block of code if a condition is true",
+            "To define a function"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the result of the following expression in Java?\n\n```\n10 % 3\n```",
+        "options": [
+            "1",
+            "3",
+            "0",
+            "10"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "Which of the following is not a valid type of data structure?",
+        "options": [
+            "Queue",
+            "Stack",
+            "Tree",
+            "List"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "text": "What is the purpose of the 'private' keyword in Java?",
+        "options": [
+            "To define a private method",
+            "To define a public method",
+            "To define a protected method",
+            "To define a static method"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What does CSS stand for?",
+        "options": [
+            "Computer Style Sheets",
+            "Creative Style Sheets",
+            "Colorful Style Sheets",
+            "Cascading Style Sheets"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "text": "What is the purpose of the 'finally' block in a try-catch-finally statement?",
+        "options": [
+            "To define code that should be executed if an exception is thrown",
+            "To define code that should be executed regardless of whether an exception is thrown",
+            "To define code that should be executed before the try block",
+            "To define code that should be executed after the catch block"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "Which of the following is not a valid type of comment in Python?",
+        "options": [
+            "// This is a comment",
+            "# This is a comment",
+            "\"\"\" This is a comment \"\"\"",
+            "# This is also a comment"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the purpose of the 'public' keyword in Java?",
+        "options": [
+            "To define a private method",
+            "To define a public method",
+            "To define a protected method",
+            "To define a static method"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "What is the result of the following expression in Python?\n\n```\n8 / 2 * (2 + 2)\n```",
+        "options": [
+            "8",
+            "16",
+            "12",
+            "4"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "What is the purpose of the 'continue' statement in a loop?",
+        "options": [
+            "To skip the rest of the code block and continue with the next iteration",
+            "To exit the loop",
+            "To go back to the beginning of the loop",
+            "To end the program"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What does HTML stand for?",
+        "options": [
+            "Hyper Text Markup Language",
+            "Home Tool Markup Language",
+            "Hyperlinks and Text Markup Language",
+            "Hyperlinking Text Model Language"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "Which of the following is not a valid type of variable in Java?",
+        "options": [
+            "int",
+            "float",
+            "string",
+            "boolean"
+        ],
+        "correctOptionIndex": 2
+    },
+    {
+        "text": "What is the purpose of the 'extends' keyword in Java?",
+        "options": [
+            "To implement an interface",
+            "To extend a class",
+            "To override a method",
+            "To define a constructor"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "What is the output of the following code snippet?\n\n```\nint x = 5;\nSystem.out.println(x++);\n```",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "4"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the purpose of the 'else if' statement in an if-else-if ladder?",
+        "options": [
+            "To execute the if block",
+            "To execute the else block",
+            "To check another condition",
+            "To end the if-else-if ladder"
+        ],
+        "correctOptionIndex": 2
+    },
+    {
+        "text": "What does API stand for?",
+        "options": [
+            "Application Programming Interface",
+            "Application Program Interface",
+            "Application Protocol Interface",
+            "Application Processor Interface"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "Which of the following is not a valid type of loop in programming?",
+        "options": [
+            "For loop",
+            "While loop",
+            "Do-while loop",
+            "If-else loop"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "text": "What is the result of the following expression in JavaScript?\n\n```\ntrue + true\n```",
+        "options": [
+            "2",
+            "true",
+            "false",
+            "Error"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the purpose of the 'typeof' operator in JavaScript?",
+        "options": [
+            "To check the type of a variable",
+            "To define a new variable",
+            "To convert a variable to a different type",
+            "To compare two variables"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the result of the following expression in Python?\n\n```\n3 ** 2\n```",
+        "options": [
+            "9",
+            "6",
+            "27",
+            "12"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the purpose of the 'static' keyword in Java?",
+        "options": [
+            "To define a static method",
+            "To define a non-static method",
+            "To define a class variable",
+            "To define an instance variable"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the output of the following code snippet?\n\n```\nlet x = 0;\nconsole.log(x++);\n```",
+        "options": [
+            "0",
+            "1",
+            "Error",
+            "Undefined"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the purpose of the 'catch' block in a try-catch-finally statement?",
+        "options": [
+            "To define code that should be executed if an exception is thrown",
+            "To define code that should be executed regardless of whether an exception is thrown",
+            "To define code that should be executed before the try block",
+            "To define code that should be executed after the finally block"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "Which of the following is not a valid type of comment in JavaScript?",
+        "options": [
+            "// This is a comment",
+            "# This is a comment",
+            "/* This is a comment */",
+            "// This is also a comment"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "text": "What is the purpose of the 'for' loop in programming?",
+        "options": [
+            "To repeat a block of code a specified number of times",
+            "To check a condition before executing a block of code",
+            "To execute a block of code if a condition is true",
+            "To define a function"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What is the result of the following expression in Java?\n\n```\n10 % 3\n```",
+        "options": [
+            "1",
+            "3",
+            "0",
+            "10"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "Which of the following is not a valid type of data structure?",
+        "options": [
+            "Queue",
+            "Stack",
+            "Tree",
+            "List"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "text": "What is the purpose of the 'private' keyword in Java?",
+        "options": [
+            "To define a private method",
+            "To define a public method",
+            "To define a protected method",
+            "To define a static method"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "text": "What does CSS stand for?",
+        "options": [
+            "Computer Style Sheets",
+            "Creative Style Sheets",
+            "Colorful Style Sheets",
+            "Cascading Style Sheets"
+        ],
+        "correctOptionIndex": 3
+    },
+    {
+        "text": "What is the purpose of the 'finally' block in a try-catch-finally statement?",
+        "options": [
+            "To define code that should be executed if an exception is thrown",
+            "To define code that should be executed regardless of whether an exception is thrown",
+            "To define code that should be executed before the try block",
+            "To define code that should be executed after the catch block"
+        ],
+        "correctOptionIndex": 1
+    },
+
+ {
+            "text": "What is a variable in programming?",
+            "options": [
+                "A value that never changes",
+                "A container for storing data values",
+                "A type of loop",
+                "A way to define functions"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "text": "What does HTML stand for?",
+            "options": [
+                "Hyper Text Markup Language",
+                "Home Tool Markup Language",
+                "Hyperlinks and Text Markup Language",
+                "Hyperlinking Text Model Language"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "text": "What does CSS stand for?",
+            "options": [
+                "Computer Style Sheets",
+                "Creative Style Sheets",
+                "Colorful Style Sheets",
+                "Cascading Style Sheets"
+            ],
+            "correctOptionIndex": 3
+        },
+        {
+            "text": "Which of the following is not a programming language?",
+            "options": [
+                "Java",
+                "Python",
+                "HTML",
+                "C++"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "text": "What does IDE stand for?",
+            "options": [
+                "Integrated Development Environment",
+                "Integrated Design Environment",
+                "Intelligent Development Environment",
+                "Intelligent Design Environment"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "text": "What is the purpose of a constructor in Java?",
+            "options": [
+                "To create a new object",
+                "To initialize a class variable",
+                "To define a class",
+                "To destroy an object"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "text": "What is the result of 5 + 3 * 2?",
+            "options": [
+                "16",
+                "11",
+                "10",
+                "9"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "text": "Which data structure uses LIFO order?",
+            "options": [
+                "Queue",
+                "Stack",
+                "Tree",
+                "List"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "text": "What is the purpose of the 'else' statement in an if-else statement?",
+            "options": [
+                "To execute the if block",
+                "To execute the else block",
+                "To check another condition",
+                "To end the if-else statement"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "text": "What is the output of the following code snippet?\n\n```\nint x = 5;\nSystem.out.println(x++);\n```",
+            "options": [
+                "5",
+                "6",
+                "7",
+                "4"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "text": "What is the result of the expression 4 % 3?",
+            "options": [
+                "1",
+                "0",
+                "4",
+                "3"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "text": "Which of the following is a correct way to declare a variable in JavaScript?",
+            "options": [
+                "var x = 5;",
+                "x = 5;",
+                "variable x = 5;",
+                "int x = 5;"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "text": "What is the output of the following code?\n\n```\nconsole.log(typeof(null));\n```",
+            "options": [
+                "object",
+                "null",
+                "undefined",
+                "string"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "text": "What is the correct way to comment out multiple lines of code in Python?",
+            "options": [
+                "// This is a comment",
+                "# This is a comment",
+                "/* This is a comment */",
+                "// This is a comment //"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "text": "Which of the following is not a primitive data type in Java?",
+            "options": [
+                "int",
+                "double",
+                "String",
+                "boolean"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "text": "What is the output of the following code?\n\n```\nint x = 6;\nSystem.out.println(x >> 1);\n```",
+            "options": [
+                "3",
+                "6",
+                "12",
+                "1"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "text": "Which of the following is used to declare a constant in Java?",
+            "options": [
+                "const",
+                "final",
+                "let",
+                "static"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "text": "What is the correct way to write an if statement in Python?",
+            "options": [
+                "if x == 5 {",
+                "if (x == 5) then {",
+                "if x == 5 then:",
+                "if x == 5:"
+            ],
+            "correctOptionIndex": 3
+        },
+        {
+            "text": "Which of the following is a correct way to declare an array in Java?",
+            "options": [
+                "int[] arr = new int[5];",
+                "int arr[] = new int[5];",
+                "int arr[] = {1, 2, 3, 4, 5};",
+                "All of the above"
+            ],
+            "correctOptionIndex": 3
+        },
+        {
+            "text": "What is the output of the following code?\n\n```\nSystem.out.println(10 > 9 && 5 < 4);\n```",
+            "options": [
+                "true",
+                "false",
+                "error",
+                "0"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "text": "Which of the following is a correct way to define a function in JavaScript?",
+            "options": [
+                "function myFunction() {}",
+                "myFunction() {}",
+                "def myFunction() {}",
+                "() => {}"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "text": "What is the purpose of the 'break' statement in a loop?",
+            "options": [
+                "To exit the loop immediately",
+                "To skip the rest of the code in the loop and start the next iteration",
+                "To signal the end of the loop",
+                "To restart the loop from the beginning"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "text": "Which of the following is not a valid JavaScript variable name?",
+            "options": [
+                "$myVar",
+                "myVar",
+                "my-var",
+                "_myVar"
+            ],
+            "correctOptionIndex": 2
+        }
+
+    ]
