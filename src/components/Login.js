@@ -226,165 +226,17 @@
 
 // code data 2
 
-// import React, { useState, useEffect } from 'react';
-// import { useNavigate } from 'react-router-dom';
-// import {
-//   getAuth,
-//   signInWithPopup,
-//   GoogleAuthProvider,
-//   onAuthStateChanged
-// } from "firebase/auth";
-// import { getDatabase, ref, set, get, child } from "firebase/database";
-// import Spinner from './Spinner';
-
-// function Login() {
-//   return (
-//     <div className="min-vh-100 d-flex justify-content-center align-items-center login-bg">
-
-//       <div className="card shadow-lg border-0 p-4 rounded-4 login-card">
-
-//         {/* Header */}
-//         <div className="text-center mb-4">
-//           <h2 className="fw-bold text-dark">
-//             Welcome to <span className="text-primary">ANONYMO</span> 🚀
-//           </h2>
-//           <p className="text-muted mb-0">
-//             Sign in to continue your journey
-//           </p>
-//         </div>
-
-//         <GoogleBtn />
-//       </div>
-
-//       {/* Background style */}
-//       <style>{`
-//         .login-bg {
-//           background: linear-gradient(135deg, #eef4ff, #f8faff);
-//         }
-
-//         .login-card {
-//           width: 380px;
-//         }
-//       `}</style>
-//     </div>
-//   );
-// }
-
-// const GoogleBtn = () => {
-//   const navigate = useNavigate();
-//   const [loading, setLoading] = useState(false);
-//   const auth = getAuth();
-//   const db = getDatabase();
-
-//   useEffect(() => {
-//     const unsubscribe = onAuthStateChanged(auth, async (user) => {
-//       if (user) {
-//         const dbRef = ref(db);
-//         try {
-//           const snapshot = await get(child(dbRef, 'users/' + user.uid));
-
-//           if (!snapshot.exists()) {
-//             await set(ref(db, "users/" + user.uid), {
-//               name: user.displayName,
-//               email: user.email,
-//               pp: user.photoURL,
-//               uid: user.uid,
-//               username: user.uid,
-//               ansq_count: 0,
-//               askq_count: 0,
-//               points: 0
-//             });
-//           }
-
-//           navigate('/user-dashboard');
-
-//         } catch (error) {
-//           console.error("Database error:", error);
-//         } finally {
-//           setLoading(false);
-//         }
-//       }
-//     });
-
-//     return () => unsubscribe();
-//   }, []);
-
-//   async function SignInGoogle() {
-//     const provider = new GoogleAuthProvider();
-//     setLoading(true);
-//     try {
-//       await signInWithPopup(getAuth(), provider);
-//     } catch (error) {
-//       console.error("Login error:", error);
-//       setLoading(false);
-//     }
-//   }
-
-//   return (
-//     <div className="d-grid">
-
-//       <button
-//         className="btn google-btn d-flex align-items-center justify-content-center gap-3 py-2 rounded-3 border-0 shadow-sm"
-//         type="button"
-//         onClick={SignInGoogle}
-//         disabled={loading}
-//       >
-//         <div className="google-icon-box">
-//           <img width="26px" src="/logo1.png" alt="Google" />
-//         </div>
-
-//         <div className="fw-semibold">
-//           {loading ? "Signing in..." : "Continue with Google"}
-//         </div>
-//       </button>
-
-//       <Spinner display={loading ? 'd-block' : 'd-none'} />
-
-//       <style>{`
-//         /* Blue Google Button */
-//         .google-btn {
-//           background: linear-gradient(135deg, #1a73e8, #4285f4);
-//           color: white;
-//           transition: all 0.3s ease;
-//         }
-
-//         .google-btn:hover {
-//           transform: translateY(-2px);
-//           box-shadow: 0 10px 25px rgba(26,115,232,0.35);
-//         }
-
-//         .google-btn:active {
-//           transform: scale(0.98);
-//         }
-
-//         /* Icon box (padding improve look) */
-//         .google-icon-box {
-//           background: rgba(255,255,255,0.15);
-//           padding: 6px 8px;
-//           border-radius: 8px;
-//         }
-//       `}</style>
-//     </div>
-//   );
-// };
-
-// export default Login;
-
-
-// code data 3 
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   getAuth,
   signInWithPopup,
   GoogleAuthProvider,
-  signInWithEmailAndPassword,
   onAuthStateChanged
 } from "firebase/auth";
 import { getDatabase, ref, set, get, child } from "firebase/database";
 import Spinner from './Spinner';
 
-/* ================= LOGIN PAGE ================= */
 function Login() {
   return (
     <div className="min-vh-100 d-flex justify-content-center align-items-center login-bg">
@@ -402,10 +254,9 @@ function Login() {
         </div>
 
         <GoogleBtn />
-        <EmailLogin />
-
       </div>
 
+      {/* Background style */}
       <style>{`
         .login-bg {
           background: linear-gradient(135deg, #eef4ff, #f8faff);
@@ -419,7 +270,6 @@ function Login() {
   );
 }
 
-/* ================= GOOGLE LOGIN ================= */
 const GoogleBtn = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
@@ -471,7 +321,7 @@ const GoogleBtn = () => {
   }
 
   return (
-    <div className="d-grid mb-3">
+    <div className="d-grid">
 
       <button
         className="btn google-btn d-flex align-items-center justify-content-center gap-3 py-2 rounded-3 border-0 shadow-sm"
@@ -479,9 +329,9 @@ const GoogleBtn = () => {
         onClick={SignInGoogle}
         disabled={loading}
       >
-        {/* <div className="google-icon-box">
+        <div className="google-icon-box">
           <img width="26px" src="/logo1.png" alt="Google" />
-        </div> */}
+        </div>
 
         <div className="fw-semibold">
           {loading ? "Signing in..." : "Continue with Google"}
@@ -491,6 +341,7 @@ const GoogleBtn = () => {
       <Spinner display={loading ? 'd-block' : 'd-none'} />
 
       <style>{`
+        /* Blue Google Button */
         .google-btn {
           background: linear-gradient(135deg, #1a73e8, #4285f4);
           color: white;
@@ -506,6 +357,7 @@ const GoogleBtn = () => {
           transform: scale(0.98);
         }
 
+        /* Icon box (padding improve look) */
         .google-icon-box {
           background: rgba(255,255,255,0.15);
           padding: 6px 8px;
@@ -516,59 +368,207 @@ const GoogleBtn = () => {
   );
 };
 
-/* ================= EMAIL LOGIN ================= */
-const EmailLogin = () => {
-  const auth = getAuth();
-  const navigate = useNavigate();
-
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  const handleLogin = async () => {
-    setLoading(true);
-    try {
-      await signInWithEmailAndPassword(auth, email, password);
-      navigate("/user-dashboard");
-    } catch (error) {
-      alert("Invalid email or password");
-      console.error(error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <div className="mt-3">
-
-      <div className="text-center text-muted mb-2">OR</div>
-
-      <input
-        type="email"
-        placeholder="Enter email"
-        className="form-control mb-2"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-
-      <input
-        type="password"
-        placeholder="Enter password"
-        className="form-control mb-3"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-
-      <button
-        className="btn btn-dark w-100"
-        onClick={handleLogin}
-        disabled={loading}
-      >
-        {loading ? "Logging in..." : "Login with Email"}
-      </button>
-
-    </div>
-  );
-};
-
 export default Login;
+
+
+// code data 3 
+// import React, { useState, useEffect } from 'react';
+// import { useNavigate } from 'react-router-dom';
+// import {
+//   getAuth,
+//   signInWithPopup,
+//   GoogleAuthProvider,
+//   signInWithEmailAndPassword,
+//   onAuthStateChanged
+// } from "firebase/auth";
+// import { getDatabase, ref, set, get, child } from "firebase/database";
+// import Spinner from './Spinner';
+
+// /* ================= LOGIN PAGE ================= */
+// function Login() {
+//   return (
+//     <div className="min-vh-100 d-flex justify-content-center align-items-center login-bg">
+
+//       <div className="card shadow-lg border-0 p-4 rounded-4 login-card">
+
+//         {/* Header */}
+//         <div className="text-center mb-4">
+//           <h2 className="fw-bold text-dark">
+//             Welcome to <span className="text-primary">ANONYMO</span> 🚀
+//           </h2>
+//           <p className="text-muted mb-0">
+//             Sign in to continue your journey
+//           </p>
+//         </div>
+
+//         <GoogleBtn />
+//         <EmailLogin />
+
+//       </div>
+
+//       <style>{`
+//         .login-bg {
+//           background: linear-gradient(135deg, #eef4ff, #f8faff);
+//         }
+
+//         .login-card {
+//           width: 380px;
+//         }
+//       `}</style>
+//     </div>
+//   );
+// }
+
+// /* ================= GOOGLE LOGIN ================= */
+// const GoogleBtn = () => {
+//   const navigate = useNavigate();
+//   const [loading, setLoading] = useState(false);
+//   const auth = getAuth();
+//   const db = getDatabase();
+
+//   useEffect(() => {
+//     const unsubscribe = onAuthStateChanged(auth, async (user) => {
+//       if (user) {
+//         const dbRef = ref(db);
+//         try {
+//           const snapshot = await get(child(dbRef, 'users/' + user.uid));
+
+//           if (!snapshot.exists()) {
+//             await set(ref(db, "users/" + user.uid), {
+//               name: user.displayName,
+//               email: user.email,
+//               pp: user.photoURL,
+//               uid: user.uid,
+//               username: user.uid,
+//               ansq_count: 0,
+//               askq_count: 0,
+//               points: 0
+//             });
+//           }
+
+//           navigate('/user-dashboard');
+
+//         } catch (error) {
+//           console.error("Database error:", error);
+//         } finally {
+//           setLoading(false);
+//         }
+//       }
+//     });
+
+//     return () => unsubscribe();
+//   }, []);
+
+//   async function SignInGoogle() {
+//     const provider = new GoogleAuthProvider();
+//     setLoading(true);
+//     try {
+//       await signInWithPopup(getAuth(), provider);
+//     } catch (error) {
+//       console.error("Login error:", error);
+//       setLoading(false);
+//     }
+//   }
+
+//   return (
+//     <div className="d-grid mb-3">
+
+//       <button
+//         className="btn google-btn d-flex align-items-center justify-content-center gap-3 py-2 rounded-3 border-0 shadow-sm"
+//         type="button"
+//         onClick={SignInGoogle}
+//         disabled={loading}
+//       >
+//         {/* <div className="google-icon-box">
+//           <img width="26px" src="/logo1.png" alt="Google" />
+//         </div> */}
+
+//         <div className="fw-semibold">
+//           {loading ? "Signing in..." : "Continue with Google"}
+//         </div>
+//       </button>
+
+//       <Spinner display={loading ? 'd-block' : 'd-none'} />
+
+//       <style>{`
+//         .google-btn {
+//           background: linear-gradient(135deg, #1a73e8, #4285f4);
+//           color: white;
+//           transition: all 0.3s ease;
+//         }
+
+//         .google-btn:hover {
+//           transform: translateY(-2px);
+//           box-shadow: 0 10px 25px rgba(26,115,232,0.35);
+//         }
+
+//         .google-btn:active {
+//           transform: scale(0.98);
+//         }
+
+//         .google-icon-box {
+//           background: rgba(255,255,255,0.15);
+//           padding: 6px 8px;
+//           border-radius: 8px;
+//         }
+//       `}</style>
+//     </div>
+//   );
+// };
+
+// /* ================= EMAIL LOGIN ================= */
+// const EmailLogin = () => {
+//   const auth = getAuth();
+//   const navigate = useNavigate();
+
+//   const [email, setEmail] = useState("");
+//   const [password, setPassword] = useState("");
+//   const [loading, setLoading] = useState(false);
+
+//   const handleLogin = async () => {
+//     setLoading(true);
+//     try {
+//       await signInWithEmailAndPassword(auth, email, password);
+//       navigate("/user-dashboard");
+//     } catch (error) {
+//       alert("Invalid email or password");
+//       console.error(error);
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
+
+//   return (
+//     <div className="mt-3">
+
+//       <div className="text-center text-muted mb-2">OR</div>
+
+//       <input
+//         type="email"
+//         placeholder="Enter email"
+//         className="form-control mb-2"
+//         value={email}
+//         onChange={(e) => setEmail(e.target.value)}
+//       />
+
+//       <input
+//         type="password"
+//         placeholder="Enter password"
+//         className="form-control mb-3"
+//         value={password}
+//         onChange={(e) => setPassword(e.target.value)}
+//       />
+
+//       <button
+//         className="btn btn-dark w-100"
+//         onClick={handleLogin}
+//         disabled={loading}
+//       >
+//         {loading ? "Logging in..." : "Login with Email"}
+//       </button>
+
+//     </div>
+//   );
+// };
+
+// export default Login;
